@@ -276,8 +276,109 @@
                             </div>
                             <!-- end col -->
                         </div>
-                        <!-- end row -->
+                        <div class="row">
+                            <h3>Possible data attributes</h3>
+                            
 
+
+        <style>
+                table.prop-table {
+                    width: 100%;
+                }
+                table.prop-table th {
+                    background: rgb(21, 67, 24);
+                    color: white;
+                    font-weight: bold;
+                    font-size: 22px;
+                }
+
+                table.prop-table td {
+                    height: 40px; 
+                }
+
+                table.prop-table,
+                table.prop-table tr,
+                table.prop-table th,
+                table.prop-table td {
+                    border: 2px solid black;
+                    font-size: 20px;
+                    padding: 10px;
+                    font-size: 20px;
+                    text-align: left;
+                }
+                .td-data-attr {
+                    font-weight: bold;
+                    color: red;
+                }
+                .data-attr-required {
+                    background:#D9E4DC;
+                }
+            </style>
+
+                <table class="prop-table">
+                    <tbody>
+                        <tr>
+                            <th>Data Attribute</th>
+                            <th>Default</th>
+                            <th>Required</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td class="td-data-attr" style="height: 30px">data-large_image</td>
+                            <td style="height: 30px">If empty, data will come from <b>data-imgsrc</b></td>
+                            <td style="height: 30px">X</td>
+                            <td style="height: 30px">data-large_image="https://oaam.s3..."</td>
+                        </tr>
+                        <tr class="data-attr-required" >
+                            <td  class="td-data-attr" style="height: 30px">data-imgsrc</td>
+                            <td style="height: 30px"></td>
+                            <td style="height: 30px" >O</td>
+                            <td style="height: 30px">data-imgsrc="https://oaam.s3..."</td>
+                        </tr>
+                        <tr>
+                            <td  class="td-data-attr" style="height: 30px">data-width</td>
+                            <td style="height: 30px">If empty, default width is 250px</td>
+                            <td style="height: 30px">X</td>
+                            <td style="height: 30px">data-width="180"</td>
+                        </tr>
+                        <tr>
+                            <td  class="td-data-attr" style="height: 30px">data-height</td>
+                            <td style="height: 30px">If empty, default height is set as "auto"</td>
+                            <td style="height: 30px">X</td>
+                            <td style="height: 30px">data-height="200"</td>
+                        </tr>
+                        <tr class="data-attr-required" >
+                            <td  class="td-data-attr" style="height: 30px">data-imgtitle</td>
+                            <td style="height: 30px"></td>
+                            <td style="height: 30px" >O</td>
+                            <td style="height: 30px">data-imgtitle="image title"</td>
+                        </tr>
+                        <tr>
+                            <td  class="td-data-attr" style="height: 30px">data-imgalt</td>
+                            <td style="height: 30px">image title</td>
+                            <td style="height: 30px">X</td>
+                            <td style="height: 30px">data-imgalt="image alt"</td>
+                        </tr>
+                        <tr>
+                            <td  class="td-data-attr" style="height: 30px">data-caption</td>
+                            <td style="height: 30px">image caption</td>
+                            <td style="height: 30px">X</td>
+                            <td style="height: 30px">data-caption="&lt;a href=”#” target=”_blank” rel=”noopener noreferrer”>OpenLink&lt;/a>"</td>
+                        </tr>
+                        <tr>
+                            <td  class="td-data-attr" style="height: 30px">data-cc</td>
+                            <td style="height: 30px"></td>
+                            <td style="height: 30px">X</td>
+                            <td style="height: 30px">data-cc="Lorem ipsum"</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+                        </div>
+                        <!-- end row -->
+<hr style="margin:50px auto;">
                         <!-- image center -->
                         <div class="row">
                             <h4 id="line4_1">Image Center</h4>
@@ -286,13 +387,11 @@
                             <img src="images/oaam/image_center.PNG" alt="" class="img-responsive img-thumbnail">
 
                             <pre class="brush: html; highlight: [2,4]">
-                                <div>
-                                    <div class="oaam-row" >
-                                        <div class="enlargeImage "
-                                            data-imgSrc="imageUrl"
-                                            data-imgTitle="imageTitleAndAlt" data-imgAlt="imageTitleAndAlt"
-                                        >
-                                        </div>
+                                <div class="image-row image-container">
+                                    <div class="imgBox_center enlargeImage"
+                                    data-imgsrc="imageUrl" 
+                                    data-imgtitle="ImageTitle"
+                                    >
                                     </div>
                                 </div>
                             </pre>
@@ -306,18 +405,10 @@
                             <hr>
 
                             <pre class="brush: html; highlight: [2,4]">
-                                <div class="oaam-row" >
-                                    <div class="enlargeImage oaam-column"
-                                        data-imgSrc="imageUrl"
-                                        data-imgTitle="imageTitleAndAlt" 
-                                        data-imgAlt="imageTitleAndAlt"
-                                        data-imgAlign="left"
-                                    >
-                                    </div>
-                                    <div class="oaam-column">
-                                        <p >
-                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                        </p>
+                                <div class="image-container">
+                                    <div class="imgBox_left enlargeImage"
+                                        data-imgsrc="imageUrl" 
+                                        data-imgtitle="imageTitle">
                                     </div>
                                 </div>
                             </pre>
@@ -332,20 +423,12 @@
                             <hr>
 
                             <pre class="brush: html; highlight: [2,4]">
-                                <div class="oaam-row" >
-                                    <div class="oaam-column">
-                                        <p >
-                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                        </p>
+                                    <div class="image-container">
+                                        <div class="imgBox_right enlargeImage"
+                                            data-imgsrc="imageUrl" 
+                                            data-imgtitle="imageTitle">
+                                        </div>
                                     </div>
-                                    <div class="enlargeImage oaam-column"
-                                        data-imgSrc="imageUrl"
-                                        data-imgTitle="imageTitleAndAlt" 
-                                        data-imgAlt="imageTitleAndAlt"
-                                        data-imgAlign="right"
-                                    >
-                                    </div>
-                                </div>
                             </pre>
                         </div>
                         <!-- end Image Right -->
@@ -358,18 +441,14 @@
                             <hr>
 
                             <pre class="brush: html; highlight: [2,4]">
-                                <div class="oaam-row" >
-                                    <div class="enlargeImage oaam-column"
-                                        data-imgSrc="imageUrl"
-                                        data-imgTitle="imageTitleAndAlt" 
-                                        data-imgAlt="imageTitleAndAlt"
-                                    >
+                                <div class="image-row image-container">
+                                    <div class="imgBox_center enlargeImage"
+                                        data-imgsrc="imageUrl" 
+                                        data-imgtitle="imageTitle">
                                     </div>
-                                    <div class="enlargeImage oaam-column"
-                                        data-imgSrc="imageUrl"
-                                        data-imgTitle="imageTitleAndAlt" 
-                                        data-imgAlt="imageTitleAndAlt"
-                                    >
+                                    <div class="imgBox_center enlargeImage"
+                                        data-imgsrc="imageUrl" 
+                                        data-imgtitle="imageTitle">
                                     </div>
                                 </div>
                             </pre>
@@ -383,87 +462,24 @@
                             <hr>
 
                             <pre class="brush: html; highlight: [2,4]">
-                        <div class="oaam-row flex-gap">
-                            <div class="enlargeImage oaam-column" data-imgsrc="imageUrl" data-imgtitle="imageTitle" data-imgalt="imageAlt" data-boxwidth="" data-imageDimension="false"  >
-                            </div>
-                            <div class="enlargeImage oaam-column" data-imgsrc="imageUrl" data-imgtitle="imageTitle" data-imgalt="imageAlt" data-boxwidth="" data-imageDimension="false"  >
-                            </div>
-                            <div class="enlargeImage oaam-column" data-imgsrc="imageUrl" data-imgtitle="imageTitle" data-imgalt="imageAlt" data-boxwidth="" data-imageDimension="false" >
-                            </div>
-                        </div>
+                                <div class="image-row image-container">
+                                    <div class="imgBox_center enlargeImage"
+                                        data-imgsrc="imageUrl" 
+                                        data-imgtitle="imageTitle">
+                                    </div>
+                                    <div class="imgBox_center enlargeImage"
+                                        data-imgsrc="imageUrl" 
+                                        data-imgtitle="imageTitle">
+                                    </div>
+                                    <div class="imgBox_center enlargeImage"
+                                        data-imgsrc="imageUrl" 
+                                        data-imgtitle="imageTitle">
+                                    </div>
+                                </div>
                     </pre>
                         </div>
                         <!-- end 3 Images -->
-
-<!-- <td class="props-html-code">data-imgsrc</td>
-<td class="props-html-code">data-imgalt</td>
-<td class="props-html-code">data-imgdesc</td>
-<td class="props-html-code">data-cc</td>
-<td class="props-html-code">data-imgalign</td>
-<td class="props-html-code">data-imgwidth</td>
-<td class="props-html-code">data-imgheight</td> -->
-
-                        <!-- Props -->
-                        <div class="row">
-                            <h4 id="line4_6">Props</h4>
-
-                            
-                        <style>
-                            table.prop-table {
-                                width: 100%;
-                            }
-                            table.prop-table th {
-                                background: rgb(21, 67, 24);
-                                color: white;
-                                font-weight: bold;
-                                font-size: 22px;
-                            }
-
-                            table.prop-table td {
-                                height: 40px; 
-                            }
-
-                            table.prop-table,
-                            table.prop-table tr,
-                            table.prop-table th,
-                            table.prop-table td {
-                                border: 2px solid black;
-                                font-size: 20px;
-                                padding: 10px;
-                                font-size: 20px;
-                                text-align: center;
-                            }
-                        </style>
-
-                            <table class="prop-table">
-                                <tbody>
-                                    <tr>
-                                        <th></th>
-                                        <th>Html code</th>
-                                        <th>Default</th>
-                                        <th>Example</th>
-                                    </tr>
-                                    <tr>
-                                        <td class="props-title">Image Title</td>
-                                        <td class="props-html-code">data-imgtitle</td>
-                                        <td class="props-default">"..."</td>
-                                        <td class="props-example">Image Title</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="height: 30px">'</td>
-                                        <td style="height: 30px">&amp;#39;</td>
-                                        <td style="height: 30px"></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="height: 30px">&#9835;</td>
-                                        <td style="height: 30px">&nbsp;</td>
-                                        <td style="height: 30px">&amp;#9835;</td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
-                        <!-- Props -->
+ 
 
                     </section>
                     <!-- end section -->
