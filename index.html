@@ -124,6 +124,15 @@
                             <li><a href="#line1">Getting Started</a></li>
                             <li><a href="#line2">Keyword</a></li>
                             <li><a href="#line3">Youtube DV</a></li>
+                            <li><a href="#line4-1">Normal Image</a>
+                                <ul class="nav">
+                                    <li><a href="#line4-1_1">Image Center</a></li>
+                                    <li><a href="#line4-1_2">Image Left</a></li>
+                                    <li><a href="#line4-1_3">Image Right</a></li>
+                                    <li><a href="#line4-1_4">Two Images</a></li>
+                                    <li><a href="#line4-1_5">Three Images</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#line4">Enlarge Image</a>
                                 <ul class="nav">
                                     <li><a href="#line4_1">Image Center</a></li>
@@ -131,7 +140,6 @@
                                     <li><a href="#line4_3">Image Right</a></li>
                                     <li><a href="#line4_4">Two Images</a></li>
                                     <li><a href="#line4_5">Three Images</a></li>
-                                    <li><a href="#line4_6">Props</a></li>
                                 </ul>
                             </li>
                             <li><a href="#line5">Title</a></li>
@@ -265,6 +273,208 @@
 
                     </section>
                     <!-- end section -->
+
+                    
+                    <section id="line4-1" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Normal Image
+                                    <hr>
+                                </h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <div class="row">
+                            <h3>Possible data attributes</h3>
+                            
+                <table class="prop-table">
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <th>Data Attribute</th>
+                            <th>Default</th>
+                            <th>Required</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr class="data-attr-required" >
+                                <td style="height: 30px">Image src</td>
+                            <td  class="td-data-attr" style="height: 30px">data-imgsrc</td>
+                            <td style="height: 30px"></td>
+                            <td style="height: 30px" >O</td>
+                            <td style="height: 30px">data-imgsrc="https://oaam.s3..."</td>
+                        </tr>
+                        <tr>
+                            <td style="height: 30px">Image Width</td>
+                            <td  class="td-data-attr" style="height: 30px">data-width</td>
+                            <td style="height: 30px">If empty, default width is 250px</td>
+                            <td style="height: 30px">X</td>
+                            <td style="height: 30px">data-width="180"</td>
+                        </tr>
+                        <tr>
+                            <td style="height: 30px">Image Height</td>
+                            <td  class="td-data-attr" style="height: 30px">data-height</td>
+                            <td style="height: 30px">If empty, default height is set as "auto"</td>
+                            <td style="height: 30px">X</td>
+                            <td style="height: 30px">data-height="200"</td>
+                        </tr>
+                        <tr class="data-attr-required" >
+                            <td style="height: 30px">Image Title</td>
+                            <td  class="td-data-attr" style="height: 30px">data-imgtitle</td>
+                            <td style="height: 30px"></td>
+                            <td style="height: 30px" >O</td>
+                            <td style="height: 30px">data-imgtitle="image title"</td>
+                        </tr>
+                        <tr>
+                            <td style="height: 30px">Image Alt text</td>
+                            <td  class="td-data-attr" style="height: 30px">data-imgalt</td>
+                            <td style="height: 30px">If image alt text is same as image title, you can skip this</td>
+                            <td style="height: 30px">X</td>
+                            <td style="height: 30px">data-imgalt="image alt"</td>
+                        </tr>
+                        <tr>
+                            <td style="height: 30px">Image Caption</td>
+                            <td  class="td-data-attr" style="height: 30px">data-caption</td>
+                            <td style="height: 30px">image caption</td>
+                            <td style="height: 30px">X</td>
+                            <td style="height: 30px">data-caption="&lt;a href=”#” target=”_blank” rel=”noopener noreferrer”>OpenLink&lt;/a>"</td>
+                        </tr>
+                        <tr>
+                            <td style="height: 30px">Image CC</td>
+                            <td  class="td-data-attr" style="height: 30px">data-cc</td>
+                            <td style="height: 30px"></td>
+                            <td style="height: 30px">X</td>
+                            <td style="height: 30px">data-cc="Lorem ipsum"</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+                        </div>
+                        <!-- end row -->
+                        <hr style="margin:50px auto;">
+                        <!-- image center -->
+                        <div class="row">
+                            <h4 id="line4-1_1">Image Center</h4>
+                            <hr>
+
+                            <img src="images/oaam/image_n_center.PNG" alt="" class="img-responsive img-thumbnail">
+
+                            <pre class="brush: html; highlight: [2,4]">
+                                <div class="image-row image-container">
+                                    <div class="imgBox_center imagenormal"
+                                    data-imgsrc="imageUrl" 
+                                    data-imgtitle="ImageTitle"
+                                    data-imgalt="ImageAlt"
+                                    data-caption="ImageCaption"
+                                    >
+                                    </div>
+                                </div>
+                            </pre>
+                        </div>
+                        <!-- end Image Center -->
+                        <!-- image left -->
+                        <div class="row">
+                            <h4 id="line4-1_2">Image Left</h4>
+
+                            <img src="images/oaam/image_n_left.PNG" alt="" class="img-responsive img-thumbnail">
+                            <hr>
+
+                            <pre class="brush: html; highlight: [2,4]">
+                                <div class="image-container">
+                                    <div class="imgBox_left imagenormal"
+                                        data-imgsrc="imageUrl" 
+                                        data-imgtitle="imageTitle"
+                                        data-imgalt="ImageAlt"
+                                        data-caption="ImageCaption">
+                                    </div>
+                                </div>
+                            </pre>
+                        </div>
+                        <!-- end Image Left -->
+
+                        <!-- image right` -->
+                        <div class="row">
+                            <h4 id="line4-1_3">Image Right</h4>
+
+                            <img src="images/oaam/image_n_right.PNG" alt="" class="img-responsive img-thumbnail">
+                            <hr>
+
+                            <pre class="brush: html; highlight: [2,4]">
+                                    <div class="image-container">
+                                        <div class="imgBox_right imagenormal"
+                                            data-imgsrc="imageUrl" 
+                                            data-imgtitle="imageTitle"
+                                            data-imgalt="ImageAlt"
+                                            data-caption="ImageCaption">
+                                        </div>
+                                    </div>
+                            </pre>
+                        </div>
+                        <!-- end Image Right -->
+
+                        <!-- 2 images` -->
+                        <div class="row">
+                            <h4 id="line4-1_4">Two Images</h4>
+
+                            <img src="images/oaam/two_n_images.PNG" alt="" class="img-responsive img-thumbnail">
+                            <hr>
+
+                            <pre class="brush: html; highlight: [2,4]">
+                                <div class="image-row image-container">
+                                    <div class="imgBox_center imagenormal"
+                                        data-imgsrc="imageUrl" 
+                                        data-imgtitle="imageTitle"
+                                        data-imgalt="ImageAlt"
+                                        data-caption="ImageCaption">
+                                    </div>
+                                    <div class="imgBox_center imagenormal"
+                                        data-imgsrc="imageUrl" 
+                                        data-imgtitle="imageTitle"
+                                        data-imgalt="ImageAlt"
+                                        data-caption="ImageCaption">
+                                    </div>
+                                </div>
+                            </pre>
+                        </div>
+                        <!-- end 2 Images -->
+                        <!-- 3 images` -->
+                        <div class="row">
+                            <h4 id="line4-1_5">Three Images</h4>
+
+                            <img src="images/oaam/three_n_images.PNG" alt="" class="img-responsive img-thumbnail">
+                            <hr>
+
+                            <pre class="brush: html; highlight: [2,4]">
+                                <div class="image-row image-container">
+                                    <div class="imgBox_center imagenormal"
+                                        data-imgsrc="imageUrl" 
+                                        data-imgtitle="imageTitle"
+                                        data-imgalt="ImageAlt"
+                                        data-caption="ImageCaption">
+                                    </div>
+                                    <div class="imgBox_center imagenormal"
+                                        data-imgsrc="imageUrl" 
+                                        data-imgtitle="imageTitle"
+                                        data-imgalt="ImageAlt"
+                                        data-caption="ImageCaption">
+                                    </div>
+                                    <div class="imgBox_center imagenormal"
+                                        data-imgsrc="imageUrl" 
+                                        data-imgtitle="imageTitle"
+                                        data-imgalt="ImageAlt"
+                                        data-caption="ImageCaption">
+                                    </div>
+                                </div>
+                    </pre>
+                        </div>
+                        <!-- end 3 Images -->
+ 
+
+                    </section>
+                    <!-- end section -->
+
 
                     <section id="line4" class="section">
 
@@ -400,6 +610,8 @@
                                     <div class="imgBox_center enlargeImage"
                                     data-imgsrc="imageUrl" 
                                     data-imgtitle="ImageTitle"
+                                    data-imgalt="ImageAlt"
+                                    data-caption="ImageCaption"
                                     >
                                     </div>
                                 </div>
@@ -417,7 +629,9 @@
                                 <div class="image-container">
                                     <div class="imgBox_left enlargeImage"
                                         data-imgsrc="imageUrl" 
-                                        data-imgtitle="imageTitle">
+                                        data-imgtitle="imageTitle"
+                                        data-imgalt="ImageAlt"
+                                        data-caption="ImageCaption">
                                     </div>
                                 </div>
                             </pre>
@@ -435,7 +649,9 @@
                                     <div class="image-container">
                                         <div class="imgBox_right enlargeImage"
                                             data-imgsrc="imageUrl" 
-                                            data-imgtitle="imageTitle">
+                                            data-imgtitle="imageTitle"
+                                            data-imgalt="ImageAlt"
+                                            data-caption="ImageCaption">
                                         </div>
                                     </div>
                             </pre>
@@ -453,11 +669,15 @@
                                 <div class="image-row image-container">
                                     <div class="imgBox_center enlargeImage"
                                         data-imgsrc="imageUrl" 
-                                        data-imgtitle="imageTitle">
+                                        data-imgtitle="imageTitle"
+                                        data-imgalt="ImageAlt"
+                                        data-caption="ImageCaption">
                                     </div>
                                     <div class="imgBox_center enlargeImage"
                                         data-imgsrc="imageUrl" 
-                                        data-imgtitle="imageTitle">
+                                        data-imgtitle="imageTitle"
+                                        data-imgalt="ImageAlt"
+                                        data-caption="ImageCaption">
                                     </div>
                                 </div>
                             </pre>
@@ -474,15 +694,21 @@
                                 <div class="image-row image-container">
                                     <div class="imgBox_center enlargeImage"
                                         data-imgsrc="imageUrl" 
-                                        data-imgtitle="imageTitle">
+                                        data-imgtitle="imageTitle"
+                                        data-imgalt="ImageAlt"
+                                        data-caption="ImageCaption">
                                     </div>
                                     <div class="imgBox_center enlargeImage"
                                         data-imgsrc="imageUrl" 
-                                        data-imgtitle="imageTitle">
+                                        data-imgtitle="imageTitle"
+                                        data-imgalt="ImageAlt"
+                                        data-caption="ImageCaption">
                                     </div>
                                     <div class="imgBox_center enlargeImage"
                                         data-imgsrc="imageUrl" 
-                                        data-imgtitle="imageTitle">
+                                        data-imgtitle="imageTitle"
+                                        data-imgalt="ImageAlt"
+                                        data-caption="ImageCaption">
                                     </div>
                                 </div>
                     </pre>
