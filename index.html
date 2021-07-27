@@ -253,6 +253,12 @@
                                     <hr>
                                 </h2>
                             </div>
+
+                            <p>You can add whitespace before or after the <img src="./images/oaam/DV.PNG" alt="dv example">.</p>
+                            <pre>
+data-spacebefore="1"
+data-spaceafter="4"
+                            </pre>
                             <!-- end col -->
                         </div>
                         <!-- end row -->
@@ -261,7 +267,9 @@
                         <pre class="brush: html; highlight: [2,4]">
                             <a href="#" 
                                 class="dv-content" 
-                                data-youtubev="Origins Of The Black Church: Enslavement Through Emancipation With Dr. Anthea Butler"
+                                data-youtubev="YoutubeVideoTitle"
+                                data-spacebefore=""
+                                data-spaceafter=""
                             >
                                 YouTube
                             </a>
@@ -745,13 +753,24 @@
                                 <h2 class="dark-text">Spotify
                                     <hr>
                                 </h2>
+                                <p>
+                                    You can set whitespace after Spotify Icon <br>
+                                    This case there is 5 space after the Spotify Icon
+                                    <pre>data-space="5"</pre>
+                                </p>
+                                
+
+                                <p>
+                                    You can leave it empty if you do not need space after the Spotify Icon
+                                    <pre>data-space=""</pre>
+                                </p>
                             </div>
                             <!-- end col -->
                         </div>
                         <!-- end row -->
                         <div class="row">
                             <pre class="brush: html" id="spot-snippet">
-                                <a class="spot_api" data-spottitle="MusicTitle" >MusicTitle</a>
+                                <a class="spot_api" data-spottitle="MusicTitle" data-space="">MusicTitle</a>
                             </pre>
 
 
