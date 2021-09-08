@@ -123,7 +123,7 @@
                         <ul class="nav">
                             <li><a href="#line1">Getting Started</a></li>
                             <li><a href="#line2">Keyword</a></li>
-                            <li><a href="#line3">Youtube DV</a></li>
+                            <li><a href="#line3">Content Discover Video</a></li>
                             <li><a href="#line4-1">Normal Image</a>
                                 <ul class="nav">
                                     <li><a href="#line4-1_1">Image Center</a></li>
@@ -155,10 +155,14 @@
                                 </ul>
                             </li>
                             <li><a href="#line10">Excerpts</a></li>
-                            <li><a href="#line11">ul / ol</a></li>
+                            <li><a href="#line17">Quotes</a></li>
+                            <li><a href="#line11">ul/ol</a></li>
+                            <li><a href="#line13">Expand/Collapse</a></li>
+                            <li><a href="#line14">Content Timeline</a></li>
+                            <li><a href="#line15">Content Listening Guide</a></li>
+                            <li><a href="#line16">Table Legacy Mockup</a></li>
+                            <li><a href="#line18">Sibelius</a></li>
                             <li><a href="#line12">HTML codes</a></li>
-                            <li><a href="#line13">Content Timeline</a></li>
-                            <li><a href="#line14">Content Listening Guide</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -251,7 +255,7 @@
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Youtube DV
+                                <h2 class="dark-text">Content Discover Video
                                     <hr>
                                 </h2>
                             </div>
@@ -767,6 +771,71 @@ data-spaceafter="4"
                                     <pre>data-space=""</pre>
                                 </p>
                             </div>
+                            <div class="col-md-12">
+                                <style>
+                                table.prop-table2 th {
+                                    background: #F0475A;
+                                    color: white;
+                                    font-weight: bold;
+                                    font-size: 20px ;
+                                    border: 2px solid black;
+                                    border-top: 3px solid black;
+                                    text-align: center;
+                                }
+
+                                table.prop-table2, 
+                                table.prop-table2 tr, 
+                                table.prop-table2 td {
+                                    border: 2px solid black;
+                                    font-size: 20px;
+                                    padding: 10px;
+                                    font-size: 18px;
+                                    text-align: left;
+                                }
+                                .data-attr-required2 {
+                                    background: #ffc0d9;
+                                }
+                                </style>
+                                <table class="prop-table2">
+                                    <tbody>
+                                        <tr>
+                                            <th  ></th>
+                                            <th  >Data Attribute</th>
+                                            <th  >Default</th>
+                                            <th  >Required</th>
+                                            <th  >Example</th>
+                                        </tr>
+                                        <tr class="data-attr-required2" >
+                                                <td style="height: 30px">Spotify Title</td>
+                                            <td  class="td-data-attr" style="height: 30px">data-spottitle</td>
+                                            <td style="height: 30px"></td>
+                                            <td style="height: 30px" >O</td>
+                                            <td style="height: 30px">data-spottitle="SpotTitle"</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="height: 30px">Whitespace after music icon</td>
+                                            <td  class="td-data-attr" style="height: 30px">data-space</td>
+                                            <td style="height: 30px"></td>
+                                            <td style="height: 30px">X</td>
+                                            <td style="height: 30px">data-space="10"</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="height: 30px">Image Height</td>
+                                            <td  class="td-data-attr" style="height: 30px">data-spotid</td>
+                                            <td style="height: 30px"></td>
+                                            <td style="height: 30px">X</td>
+                                            <td style="height: 30px">If there are multiple pieces have same title, get "id" from DF<br>data-spotid="162"</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="height: 30px">Custom style</td>
+                                            <td  class="td-data-attr" style="height: 30px">data-spotstyle</td>
+                                            <td style="height: 30px"></td>
+                                            <td style="height: 30px">X</td>
+                                            <td style="height: 30px">data-spotstyle="color;red; font-size:20;"</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                             <!-- end col -->
                             
                         </div>
@@ -1096,13 +1165,39 @@ data-spaceafter="4"
                     </section>
                     <!-- end section -->
 
+                    <section id="line17" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Quotes
+                                    <hr>
+                                </h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <img src="./images/oaam/quotes.PNG" style="max-width:400px; width:100%; height;auto;" alt="">
+                            <pre class="brush: html; highlight: [2,4]">
+                                <div class="oaam-content-quote-style" data-quotetext="" data-quotename=""></div>
+                            </pre>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+
                     <section id="line11" class="section">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">ul / ol
+                                <h2 class="dark-text">ul/ol
                                     <hr>
                                 </h2>
+
+                                <p style="font-size:12px; color:#ccc;">unit##</p>
                             </div>
                             <!-- end col -->
                         </div>
@@ -1131,14 +1226,95 @@ data-spaceafter="4"
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Content Timeline
+                                <h2 class="dark-text">Expand/Collapse
                                     <hr>
                                 </h2>
+                                <p style="float:right;">
+                                    The Invisible Church (Continued) <br>
+                                    oaam_u2_l5_04.html <br>
+                                    https://c4elink.org/mod/page/view.php?id=944559 
+                                </p>
                             </div>
                             <!-- end col -->
                         </div>
                         <!-- end row -->
                         <div class="row">
+                            <div class="col-md-12">
+                                <img src="./images/oaam/expand_collapse.PNG" style="width:90%;border:2px solid black;" alt="">
+                            </div>
+                            <div class="col-md-12">
+                                <pre class="brush: html; highlight: [2,4]">
+                                    <div class="oaam-panel-container">
+                                        <div class="panel-group oaam-panel-group" id="accordion" role="tablist"
+                                            aria-multiselectable="true">
+
+                                            <!-- Tab -->
+                                            <div class="panel ">
+                                                <div class="panel-heading oaam-panel-heading" role="tab" id="headingOne">
+                                                    <button class="oaam-panel-btn oaam-panel-btn-plus" data-toggle="collapse"
+                                                        data-parent="#accordion" href="#UniqueIdFoeEveryTab" aria-expanded="false"
+                                                        aria-controls="UniqueIdFoeEveryTab">
+                                                        TabTitle
+                                                    </button>
+                                                </div>
+                                                <div id="UniqueIdFoeEveryTab" class="panel-collapse collapse" role="tabpanel"
+                                                    aria-labelledby="headingOne">
+                                                    <div class="panel-body">
+                                                        <ul>
+                                                            <li></li>
+                                                            <li></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Tab -->
+                                            <div class="panel ">
+                                                <div class="panel-heading oaam-panel-heading" role="tab" id="headingOne">
+                                                    <button class="oaam-panel-btn oaam-panel-btn-plus" data-toggle="collapse"
+                                                        data-parent="#accordion" href="#UniqueIdFoeEveryTab2" aria-expanded="false"
+                                                        aria-controls="UniqueIdFoeEveryTab2">
+                                                        TabTitle
+                                                    </button>
+                                                </div>
+                                                <div id="UniqueIdFoeEveryTab2" class="panel-collapse collapse" role="tabpanel"
+                                                    aria-labelledby="headingOne">
+                                                    <div class="panel-body">
+                                                        <P>TabContent</P>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </pre>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line14" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Content Timeline
+                                    <hr>
+                                </h2>
+                                <p style="float:right;">
+                                    Civil Rights <br>
+                                    oaam_u5_l16_02.html <br>
+                                    https://c4elink.org/mod/page/view.php?id=944821
+                                </p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="./images/oaam/timeline.PNG" width="90%" style="border:2px solid black;" alt="">
+                            </div>
                             <div class="col-md-12">
                                 <pre class="brush: html; highlight: [2,4]">
                                     <div class="Timeline-ExpandCollapse" data-accordion-prefix-classes="minimalist-noanim" data-accordion-multiselectable="none">
@@ -1175,12 +1351,17 @@ data-spaceafter="4"
                     </section>
                     <!-- end section -->
 
-                    <section id="line14" class="section">
+                    <section id="line15" class="section">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Content Listening Guide
+                                <h2 class="dark-text">Content Listening Guide 
                                     <hr>
+                                    <p style="float: right;" >
+                                        Spirituals, Hymns, and Anthems 2: Listening Guide: Pete Seeger "We Shall Overcome" <br>
+                                        oaam_u5_l16_07.html <br>
+                                        https://c4elink.org/mod/page/view.php?id=1066631
+                                    </p>
                                 </h2>
                             </div>
                             <!-- end col -->
@@ -1188,18 +1369,18 @@ data-spaceafter="4"
                         <!-- end row -->
                         <div class="row">
                             <div class="col-md-12">
-                                <img src="./images/oaam/Listening_guide_mockup.PNG" alt="Listening guide mockup">
+                                <img src="./images/oaam/content_listening_guide.PNG" alt="Listening guide mockup" width="90%" height="auto" style="border:2px solid black;">
                             </div>
                             <div class="col-md-12">
                                 <pre class="brush: html; highlight: [2,4]">
-                                    <table class="oaam-table-container oaam-blue-theme text-left" width="100%" role="table" aria-label="Destinations">
+                                    <table class="oaam-table-container oaam-listening-guide-blue-theme text-left" width="100%" role="table" aria-label="Destinations">
                                         <caption>
                                             <strong>TableCaption</strong>
                                         </caption>
                                         <thead>
                                             <tr class="flex-table " role="rowgroup">
                                                 <th class="oaam-flex-row first " role="columnheader" colspan="3"
-                                                    style="text-transform:none; background:#bac4d1; color:#black; text-align:center;font-size: 18px;">
+                                                    style="text-transform:none; background:#bac4d1; color:black; text-align:center;font-size: 18px;">
                                                     <a class="spot_api" data-spottitle="#" data-space="">
                                                         MusicTitle</a>
                                                     <br>
@@ -1228,6 +1409,137 @@ data-spaceafter="4"
 
                     </section>
                     <!-- end section -->
+
+                    
+                    <section id="line16" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Table Legacy Mockup
+                                    <hr>
+                                    <p style="float: right;" >
+                                        Timeline of the Golden Age of Gospel (1940s) <br>
+                                        oaam_u5_l17_03.html <br>
+                                        https://c4elink.org/mod/page/view.php?id=1066645
+                                    </p>
+                                </h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="./images/oaam/table_legacy_mockup.PNG" alt="Listening guide mockup" width="90%" height="auto">
+                            </div>
+                            <div class="col-md-12">
+                                <pre class="brush: html; highlight: [2,4]">
+                                    <div class="table-legacy-style unit5" >
+                                        <style>
+                                        table.oaam-blue-theme th {position: sticky; top: 0; text-transform:uppercase;}
+                                        table.oaam-blue-theme tr:nth-child(odd) {background: #fff}
+                                        table.oaam-blue-theme tr:nth-child(even) {background: #e2e3e5}
+                                        
+                                        table.oaam-blue-theme th {color: #0e234c;border: 2px solid #f1f0ee;}
+                                        table.oaam-blue-theme td {text-align:left;color: #0e234c;border: 2px solid #f1f0ee;}
+                                        .oaam-text-center {text-align: center !important;}
+                                        .oaam-flex-row {width: 15%;}
+                                        </style>
+                                        <table class="oaam-table-container oaam-blue-theme text-left" width="100%" role="table" aria-label="">
+                                            <caption>TableCaption</caption>
+                                            <thead>
+                                                <tr class="flex-table " role="rowgroup">
+                                                    <th class="oaam-flex-row first " role="columnheader">Photo/Image</th>
+                                                    <th class="oaam-flex-row oaam-flex-row-narrow" role="columnheader">Year</th>
+                                                    <th class="oaam-flex-row" role="columnheader">Artists</th>
+                                                    <th class="oaam-flex-row" role="columnheader">Event</th>
+                                                    <th class="oaam-flex-row" role="columnheader">Legacy/Significance</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="flex-table " role="rowgroup">
+                                                    <td class="oaam-flex-row first row-title" role="cell">
+
+                                                    </td>
+                                                    <td class="oaam-flex-row  row-title oaam-text-center oaam-flex-row-narrow" role="cell">
+
+                                                    </td>
+                                                    <td class="oaam-flex-row" role="cell">
+
+                                                    </td>
+                                                    <td class="oaam-flex-row" role="cell">
+                                                        
+                                                    </td>
+                                                    <td class="oaam-flex-row" role="cell">
+                                                        
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr class="flex-table " role="rowgroup">
+                                                    <td class="oaam-flex-row first row-title" role="cell">
+                                                        <div class="imgBox_center enlargeImage"
+                                                            data-imgsrc="ImageUrl" 
+                                                            data-imgtitle="ImageTitle" 
+                                                            data-imgalt="imateTitle"
+                                                            data-width="100"
+                                                        >
+                                                        </div>
+                                                    </td>
+                                                    <td class="oaam-flex-row   row-title oaam-text-center oaam-flex-row-narrow" role="cell">
+                                                        
+                                                    </td>
+                                                    <td class="oaam-flex-row" role="cell">
+                                                        
+                                                    </td>
+                                                    <td class="oaam-flex-row" role="cell">
+                                                        
+                                                    </td>
+                                                    <td class="oaam-flex-row" role="cell">
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </pre>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    
+                    <section id="line18" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Sibelius Video
+                                    <hr>
+                                    <p style="float: right;" >
+                                        African American Field Hollers and Work Songs <br>
+                                        oaam_u1_l4_02.html <br>
+                                        https://c4elink.org/mod/page/view.php?id=944553
+                                    </p>
+                                </h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="./images/oaam/sibelius.png" alt="Listening guide mockup" width="70%" height="auto">
+                            </div>
+                            <div class="col-md-12">
+                                <pre class="brush: html; highlight: [2,4]">
+                                        <div class="oaam-sibelius" data-sibtitle="sibeliusTitle" data-sibfilename="sibeliusVideoFileName"></div>
+                                </pre>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
 
 
                     <section id="line12" class="section">
